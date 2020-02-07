@@ -17,7 +17,7 @@ $result:=formula_chain ($formulas).call(Null;0) // (0 + 1) + 2 = 3
 
 ```4d
 $operation:=New object("compute";formula_chain ($col))
-$result:=operation.compute(3)
+$result:=$operation.compute(3) // (3 + 1) + 2 = 5
 ```
 
 more in [formula_chain](Documentation/Methods/formula_chain.md)
