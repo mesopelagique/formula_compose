@@ -7,4 +7,9 @@ $formulas:=New collection(Formula($1+1);Formula($1+2))
 $result:=formula_chain ($formulas).call(Null;0) // (0 + 1) + 2 = 3
 ```
 
+```4d
+$operation:=New object("compute";formula_chain ($col))
+$result:=operation.compute(3)
+```
+
 more in [formula_chain](Documentation/Methods/formula_chain.md)
