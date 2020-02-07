@@ -6,7 +6,7 @@
 
 Create a new `Formula` from a collection of `Formula`.
 
-Result of previous `Formula` computation is used as parameter for the next one. So you can chain multiple operation.
+Result of previous `Formula` computation is used as parameter for the next one. So you can chain multiple operations.
 
 ## Examples 
 
