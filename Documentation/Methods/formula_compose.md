@@ -1,9 +1,5 @@
-[![language](https://img.shields.io/static/v1?label=language&message=4d&color=blue)](https://developer.4d.com/)
-[![language-top](https://img.shields.io/github/languages/top/mesopelagique/formula_compose.svg)](https://developer.4d.com/)
-![code-size](https://img.shields.io/github/languages/code-size/mesopelagique/formula_compose.svg)
-[![license](https://img.shields.io/github/license/mesopelagique/formula_compose)](LICENSE)
-
-# ⛓ Formula Composition
+﻿<!-- formula_compose(formula, [formulas...]).call(inital value) -->
+## Description
 
 Create a new `Formula` from a list of `Formula`.
 
@@ -21,11 +17,13 @@ $formulas:=New collection(Formula($1+1);Formula($1+2)) // add one then add 2
 $result:=formula_compose ($formulas).call(Null;0) // (0 + 1) + 2 = 3
 ```
 
+```4d
+$result:=formula_compose (Formula($1+1);Formula($1+2);Formala(String($1))).call(Null;0) // String((0 + 1) + 2) = "3"
+```
+
 ### Assigning to an object
 
 ```4d
 $operation:=New object("compute";formula_compose ($formulas))
 $result:=$operation.compute(3) // (3 + 1) + 2 = 5
 ```
-
-more in [formula_compose](Documentation/Methods/formula_compose.md)
