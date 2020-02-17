@@ -18,7 +18,7 @@ $result:=formula_compose ($formulas).call(Null;0) // (0 + 1) + 2 = 3
 ```
 
 ```4d
-$result:=formula_compose (Formula($1+1);Formula($1+2);Formala(String($1))).call(Null;0) // String((0 + 1) + 2) = "3"
+$result:=formula_compose (Formula($1+1);Formula($1+2);Formula(String($1))).call(Null;0) // String((0 + 1) + 2) = "3"
 ```
 
 ### Assigning to an object
