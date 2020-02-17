@@ -7,7 +7,7 @@
 
 Create a new `Formula` from a list of `Formula`.
 
-![f(x) | g(y) | h(z) -> h(g(f(x)))](https://latex.codecogs.com/png.latex?f(x)&space;\cdot&space;g(y)&space;\cdot&space;h(z)&space;\Leftrightarrow&space;h(g(f(x))))
+![f(x) | g(y) | h(z) -> h(g(f(x)))](https://latex.codecogs.com/png.latex?f%28x%29&space;\cdot&space;g%28y%29&space;\cdot&space;h%28z%29&space;\Leftrightarrow&space;h%28g%28f%28x%29%29%29)
 
 Result of previous `Formula` computation is used as parameter for the next one. So you can chain multiple operations.
 
