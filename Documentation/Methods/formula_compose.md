@@ -27,3 +27,7 @@ $result:=formula_compose (Formula($1+1);Formula($1+2);Formula(String($1))).call(
 $operation:=New object("compute";formula_compose ($formulas))
 $result:=$operation.compute(3) // (3 + 1) + 2 = 5
 ```
+
+## Unit Tests
+
+[test_formula_compose](../../Project/Sources/Methods/test_formula_compose.4dm)
